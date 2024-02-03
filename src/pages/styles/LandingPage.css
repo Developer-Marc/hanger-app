@@ -1,0 +1,50 @@
+.brand-name {
+  font-size: 3rem;
+  color: rgb(126, 206, 122);
+}
+
+.intro-text {
+  font-size: large
+}
+
+.logo {
+  height: 13rem
+}
+
+.landing-container {
+    max-width: 40rem;
+    max-height: 40rem;
+    margin: 0 2rem;
+  }
+  
+  .user-state-actions {
+    margin-top: 3rem;
+  }
+  
+  .link-button {
+    width: 10rem;
+    padding: 1rem 2rem;
+    background-color: rgb(19, 19, 19);
+    color:rgb(103, 193, 216);
+    border-radius: 4rem;
+  }
+  
+  .link-home {
+    font-size: larger;
+    font-weight: bolder;
+    width: 10rem;
+    padding: 1rem 2rem;
+  }
+  
+
+  @media (prefers-color-scheme: light) {
+    .text-welcome {
+      color: rgb(77, 163, 74);
+    }
+
+    .link-button {
+      color:azure;
+      background-color: rgb(147, 176, 187);
+    }
+    
+  }

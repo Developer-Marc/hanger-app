@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+.home-page {
+  padding-top: 8vh;
+  max-width: 80vw;
+}
+
+.person-pic {
+  border-radius: 15%;
+}
+
+.person-contact-details {
+  height: 0.4rem
+}
+
+
+.person-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #222c30;
+  margin-top: 2rem;
+  padding: 0 2rem 0;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-style: dashed;
+  border-color: antiquewhite;
+  background-color: rgb(194, 216, 199);
+  z-index: 0;
+}
+
+.person-name {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.activity-person {
+  position: relative;
+  z-index: 7;
+}
+
+.img-hanger-contact-info {
+  position: absolute;
+  width: 11rem;
+  margin: 0;
+  margin-top: -25.5rem;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+.contact-info {
+  border-top: 0.4rem;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-color: #68818c;
+  border-style: double;
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-container {
+  height: 5.5rem;
+}
+
+.contact-info > * {
+  margin: 0
+}
+
+.button-save-details {
+  margin-bottom: 1rem;
+  background-color: rgb(64, 137, 137);
+  color: rgb(145, 217, 138);
+}
+
+@media (max-width: 600px) {
+
+  
+}

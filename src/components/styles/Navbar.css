@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    border-bottom: 1px solid #000;
+    justify-content: space-between;
+}
+
+
+.logo-icon {
+    width: 65px;
+}
+
+.link-logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(126, 206, 122);
+  }
+
+  .link-logo > * {
+    margin-right: 0.4rem;
+  }
+
+
+  
+  @media (prefers-color-scheme: light) {
+    .navbar {
+      background-color: rgb(178, 193, 209);
+      border-color: aliceblue;
+    }
+
+    .link-logo {
+      color: #ffffff;
+    }
+
+  }

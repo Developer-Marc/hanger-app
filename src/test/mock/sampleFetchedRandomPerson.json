@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Lachlan",
+                "last": "Clarke"
+            },
+            "location": {
+                "street": {
+                    "number": 4132,
+                    "name": "Brougham Street"
+                },
+                "city": "Hastings",
+                "state": "Waikato",
+                "country": "New Zealand",
+                "postcode": 48333,
+                "coordinates": {
+                    "latitude": "48.6002",
+                    "longitude": "-103.4323"
+                },
+                "timezone": {
+                    "offset": "+4:00",
+                    "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+                }
+            },
+            "email": "lachlan.clarke@example.com",
+            "login": {
+                "uuid": "919615d6-444c-425e-9f78-0af50f2ab07e",
+                "username": "heavyleopard106",
+                "password": "walter",
+                "salt": "rssVhw3g",
+                "md5": "40ff5ba7eb5ac07f46e1472bf4878181",
+                "sha1": "72c4cfa5698d30938551a7af97f49fa20b46e8d0",
+                "sha256": "4dbe3d1eb651c193acb3964db2202c50d4345dc16bf9eba9c8c4b1da33b36a9c"
+            },
+            "dob": {
+                "date": "1981-07-05T03:07:53.354Z",
+                "age": 42
+            },
+            "registered": {
+                "date": "2021-07-27T14:50:14.976Z",
+                "age": 2
+            },
+            "phone": "(091)-660-4917",
+            "cell": "(009)-372-0384",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/35.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/35.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/35.jpg"
+            },
+            "nat": "NZ"
+        }
+    ],
+    "info": {
+        "seed": "de02c1bc336d4473",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}
