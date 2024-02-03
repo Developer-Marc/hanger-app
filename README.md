@@ -9,4 +9,4 @@ Before using app after cloning/downloading:
 
 
 Or go the link/s below
- - ' https://hangout-hanger.netlify.app/home/ '
+ - ' https://hangout-hanger.netlify.app/ '
