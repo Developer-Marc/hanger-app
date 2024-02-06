@@ -5,7 +5,7 @@ import Navbar from './components/Navbar.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
 import LandingPage from './pages/LandingPage.jsx';
 import ProtectedRoutes from './utils/ProtectedRoutes.jsx';
-
+import ErrorRequest from './components/ErrorRequest.jsx'
 import './App.css'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
@@ -22,14 +22,14 @@ function App() {
         <Routes>
 
           <Route path="/" element={
-            <ErrorBoundary fallback={<h1>Something went wrong</h1>}>
+            <ErrorBoundary fallback={<ErrorRequest/>}>
               <LandingPage />
             </ErrorBoundary>} />
 
           <Route element={<ProtectedRoutes />}>
 
             <Route path="/home" element={
-              <ErrorBoundary fallback={<h1>Something went wrong</h1>}>
+              <ErrorBoundary fallback={<ErrorRequest/>}>
                 <Home />
               </ErrorBoundary>
             } />

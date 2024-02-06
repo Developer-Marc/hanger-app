@@ -11,6 +11,7 @@ import ActivityDetails from "../details/ActivityDetails";
 
 import HangerContactInfo from '../assets/HangerContactInfo.png';
 import './styles/Home.css'
+import SearchLoading from "../components/SearchLoading";
 
 
 const Home = () => {
@@ -42,40 +43,40 @@ const Home = () => {
     }
 
     return (
+
         <div className="home-page">
-            <UserProfile />
-            <div className="person-search">
 
-                {isFetchingActivity || isFetchingPerson || isLoading ?
-                    <h3>. . .<br />Finding you a person<br />to hangout with<br />. . .</h3>
-                    :
-                    <div>
+            {isFetchingActivity || isFetchingPerson || isLoading ? <>
 
-                        <ActivityDetails data={randomActivity} person={randomPerson} />
+                <SearchLoading /></>
+                :
+                <>
+                    <UserProfile />
 
-                        <div className="person-info" onClick={() => { setContactPressed(!contactPressed) }}>
-                            
-                            <img className="img-hanger-contact-info" src={HangerContactInfo} alt="logo" />
+                    <ActivityDetails data={randomActivity} person={randomPerson} />
 
-                            <p className="font-changa">Connect with Him/Her: </p>
+                    <div className="person-info" onClick={() => { setContactPressed(!contactPressed) }}>
 
-                            <PersonDetails data={randomPerson} contactPressed={contactPressed} />
+                        <img className="img-hanger-contact-info" src={HangerContactInfo} alt="logo" />
 
-                            {contactPressed ? <div className="contact-info-container">
-                                <button className="button-save-details" onClick={() => {
-                                    buttonSaveDetails()
-                                }}>Save Details</button>
-                            </div> : ''}
-                        </div>
+                        <p className="font-changa">Connect with Him/Her: </p>
 
-                        <button onClick={() => {
-                            buttonNewPerson()
-                        }}>Find me a new person<br />to hangout with
-                        </button>
+                        <PersonDetails data={randomPerson} contactPressed={contactPressed} />
 
+                        {contactPressed ? <div className="contact-info-container">
+                            <button className="button-save-details" onClick={() => {
+                                buttonSaveDetails()
+                            }}>Save Details</button>
+                        </div> : ''}
                     </div>
-                }
-            </div>
+
+                    <button onClick={() => {
+                        buttonNewPerson()
+                    }}>Find me a new person<br />to hangout with
+                    </button>
+
+                </>
+            }
         </div>
     )
 }
